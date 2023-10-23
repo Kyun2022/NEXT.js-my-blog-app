@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import classes from 'src/components/Nav/Nav.module.css'
+import classes from 'src/components/Nav/Nav.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Nav() {
   return (
