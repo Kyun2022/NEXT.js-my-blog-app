@@ -9,10 +9,12 @@ import {
 } from 'src/components/TwoColumn/TwoColumn';
 import Image from 'next/legacy/image';
 import EyeCatch from 'src/images/about.jpg';
+import Meta from 'src/components/meta';
 
 export default function About() {
   return (
     <Container>
+      <Meta pageTitle="アバウト" pageDesc="About development activities" />
       <Hero title="About" subtitle="About development activities" />
 
       <figure>
