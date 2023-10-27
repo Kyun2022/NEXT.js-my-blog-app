@@ -1,20 +1,26 @@
-import Hero from 'src/components/Hero/Hero';
-import Container from 'src/components/Container/Container';
-import PostBody from 'src/components/PostBody/PostBody';
-import Contact from 'src/components/Contact/Contact';
+import Hero from 'src/components/Hero/Hero'
+import Container from 'src/components/Container/Container'
+import PostBody from 'src/components/PostBody/PostBody'
+import Contact from 'src/components/Contact/Contact'
 import {
   TwoColumn,
   TwoColumnMain,
   TwoColumnSidebar,
-} from 'src/components/TwoColumn/TwoColumn';
-import Image from 'next/legacy/image';
-import EyeCatch from 'src/images/about.jpg';
-import Meta from 'src/components/meta';
+} from 'src/components/TwoColumn/TwoColumn'
+import Image from 'next/legacy/image'
+import EyeCatch from 'src/images/about.jpg'
+import Meta from 'src/components/Meta'
 
 export default function About() {
   return (
     <Container>
-      <Meta pageTitle="アバウト" pageDesc="About development activities" />
+      <Meta
+        pageTitle="アバウト"
+        pageDesc="About development activities"
+        pageImg={EyeCatch.src}
+        pageImgW={EyeCatch.width}
+        pageImgH={EyeCatch.height}
+      />
       <Hero title="About" subtitle="About development activities" />
 
       <figure>
@@ -52,5 +58,5 @@ export default function About() {
         </TwoColumnSidebar>
       </TwoColumn>
     </Container>
-  );
+  )
 }

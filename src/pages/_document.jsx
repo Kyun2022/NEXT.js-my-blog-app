@@ -1,14 +1,16 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
+
+import { siteMeta } from 'src/lib/Constants';
+const { siteLang } = siteMeta;
 
 export default function Document() {
   return (
-    <Html lang="ja">
+    <Html lang={siteLang}>
       <Head />
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
- 
