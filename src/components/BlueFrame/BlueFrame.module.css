@@ -1,0 +1,28 @@
+.frame {
+  padding: var(--space-md) 0;
+  background-color: #4c86c1;
+}
+
+.frame > :first-child {
+  padding: var(--space-xs) 0;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.sideBtn {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sideBtn {
+    display: revert;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    padding: 1.5em 0.75em;
+    border-radius: 0.5em 0 0 0.5em;
+    color: var(--white);
+    background-color: var(black);
+    writing-mode: vertical-rl;
+  }
+}
